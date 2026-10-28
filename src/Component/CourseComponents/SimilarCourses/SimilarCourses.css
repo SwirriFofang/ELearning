@@ -1,0 +1,40 @@
+.similar {
+    margin-top: 50px;
+}
+
+.similar-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.similar-head h3 {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.similar-head a {
+    font-size: 13px;
+}
+
+.similar-head a:hover {
+    color: var(--brand);
+}
+
+.similar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* in this design the cards have no border */
+.similar-grid .course-row {
+    border: 0;
+}
+
+@media (max-width: 900px) {
+    .similar-grid {
+        grid-template-columns: 1fr;
+    }
+}

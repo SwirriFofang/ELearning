@@ -1,0 +1,43 @@
+.course-row {
+    display: flex;
+    gap: 14px;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    padding: 10px 12px 14px 10px;
+    transition: 0.2s;
+}
+
+.course-row:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.course-row img {
+    width: 90px;
+    height: 90px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.course-row h4 {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.45;
+}
+
+.course-row p {
+    font-size: 9px;
+    line-height: 1.6;
+    color: #666;
+    margin: 6px 0 8px;
+}
+
+.course-row .price {
+    font-size: 14px;
+}
+
+.course-row .old-price {
+    font-size: 11px;
+    margin-left: 4px;
+}

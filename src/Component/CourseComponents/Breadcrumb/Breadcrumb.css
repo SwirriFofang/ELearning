@@ -1,0 +1,14 @@
+.breadcrumb {
+    font-size: 13px;
+    color: #9ca3af;
+    margin-bottom: 16px;
+}
+
+.breadcrumb a:hover {
+    color: var(--brand);
+}
+
+.breadcrumb strong {
+    color: #1f1a0e;
+    font-weight: 600;
+}

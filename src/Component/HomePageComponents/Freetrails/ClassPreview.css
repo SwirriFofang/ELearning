@@ -1,0 +1,46 @@
+.class-preview {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+
+.class-preview .btn {
+    margin-top: 20px;
+}
+
+.preview-card {
+    margin: 32px auto 20px;
+    padding: 14px;
+    max-width: 760px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.preview-card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.mode-row {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.mode {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    padding: 12px 28px 12px 14px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.mode .icon-box {
+    width: 30px;
+    height: 30px;
+}

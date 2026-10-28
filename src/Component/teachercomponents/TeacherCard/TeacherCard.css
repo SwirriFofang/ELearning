@@ -1,0 +1,69 @@
+/* grid that holds the cards */
+.teacher-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+/* one card */
+.teacher-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px 20px 24px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    transition: 0.2s;
+}
+
+.teacher-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+.teacher-card img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 14px;
+}
+
+.teacher-card h3 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.teacher-stars {
+    display: inline-flex;
+    gap: 2px;
+    margin-top: 4px;
+}
+
+.teacher-card p {
+    font-size: 12px;
+    color: #8a8a8a;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.teacher-card {
+  display: block;
+  /* ...the rest stays the same... */
+}
+
+@media (max-width: 960px) {
+    .teacher-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .teacher-grid {
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 360px) {
+    .teacher-grid {
+        grid-template-columns:1fr;
+    }
+}

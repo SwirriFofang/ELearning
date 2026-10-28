@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --brand: #fbbc04;
+  --brand-soft: #fff3d6;
+  --ink: #2b2108;
+  --navy: #1a1446;
+  --bg: #f7f7f7;
+  --muted: #6b7280;
+}
+
+/* Reset & base */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit';
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background-color: rgba(128, 128, 128, 0.11);
+  font-family: 'Nunito', sans-serif;
+  background: var(--bg);
+  color: #1f1a0e;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+
+
+
+
+
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  background: none;
+}
+
+/* Shared helpers */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.center-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 32px;
+}
+
+.muted {
+  color: var(--muted);
+  text-align: center;
+  max-width: 560px;
+  margin: 8px auto 0;
+  font-size: 14px;
+}
+
+.icon-box {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 45% 55% 40% 60% / 55% 45% 55% 45%;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 11px 26px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  filter: brightness(0.95);
+  transform: translateY(-1px);
+}
+
+.btn-brand {
+  background: var(--brand);
+  color: #1f1a0e;
+}
+
+.btn-dark {
+  background: var(--ink);
+  color: #fff;
+}
+
+/* Logo (used by Header and Footer) */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.logo img {
+  height: 34px;
+}
+
+/* .course-page */
+
+.course-page {
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+
+.course-detail-page {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.no-results {
+  text-align: center;
+  color: var(--muted);
+  margin: 40px 0;
+}
+
+.teacher-page {
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+.price {
+  color: #f26a1b;
+  font-weight: 800;
+}
+
+.old-price {
+  color: #9ca3af;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+

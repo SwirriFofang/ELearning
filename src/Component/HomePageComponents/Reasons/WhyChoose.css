@@ -1,0 +1,83 @@
+.why {
+    padding: 64px 0;
+    background: linear-gradient(to bottom, var(--bg) 60%, var(--brand) 60%);
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.why-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 30px 24px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    transition: 0.2s;
+}
+
+.why-card:hover {
+    transform: translateY(-5px);
+}
+
+/* the illustration at the top of each card */
+.why-img {
+    display: block;
+    height: 100px;
+    /* controls the size: raise or lower this */
+    width: auto;
+    /* keeps the picture's proportions */
+    max-width: 100%;
+    /* never wider than the card */
+    object-fit: contain;
+    /* never cropped or stretched */
+    margin: 0 auto 16px;
+    /* centred, with space below */
+}
+
+.why-card h3 {
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.why-card p {
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--muted);
+}
+
+/* ----- tablet ----- */
+@media (max-width: 900px) {
+    .why-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .why-img {
+        height: 90px;
+    }
+}
+
+/* ----- phone ----- */
+@media (max-width: 560px) {
+    .why {
+        padding: 44px 0;
+    }
+
+    .why-card {
+        padding: 24px 18px 28px;
+    }
+
+    .why-img {
+        height: 76px;
+        margin-bottom: 12px;
+    }
+
+    .why-card h3 {
+        font-size: 15px;
+    }
+}
